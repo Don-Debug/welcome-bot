@@ -73,6 +73,7 @@ body {
     display: flex;
     justify-content: start;
     align-items: center;
+    z-index: 1000;
 }
 
 .menu li {
@@ -152,4 +153,20 @@ body {
 .text {
     cursor: pointer;
     padding: 10px 10px;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 6%;
+    right: 4%;
+    color: rgb(255, 255, 255);
+    font-size: 29px;
+    background-color: rgb(14, 76, 247);
+    border-radius: 50%;
+    display: none;
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
 }

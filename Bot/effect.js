@@ -20,3 +20,21 @@ function typing() {
     }
 }
 typing();
+//back to top button
+const backtotop = document.querySelector("#back-to-top");
+
+window.addEventListener("scroll", scrollfunction);
+
+function scrollfunction() {
+    if (window.pageYOffset > 100) {
+        backtotop.style.display = "block";
+    } else {
+        backtotop.style.display = "none";
+    }
+}
+
+backtotop.addEventListener("click", backToTop)
+
+function backToTop() {
+    window.scrollTo(0, 0);
+}
