@@ -16,7 +16,7 @@ function typing() {
     if (i < text.length) {
         document.getElementById("autotype").innerHTML += text.charAt(i);
         i++;
-        setTimeout(typing, 100);
+        setTimeout(typing, 70);
     }
 }
 typing();
