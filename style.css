@@ -46,7 +46,7 @@ html {
 }
 
 .hide {
-    animation: smash 1.5s forwards;
+    animation: smash 3s forwards;
 }
 
 @keyframes smash {
