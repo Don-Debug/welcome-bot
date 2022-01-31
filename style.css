@@ -170,7 +170,7 @@ nav {
         transform: translateY(-10px);
     }
     to {
-        transform: translateY(5px);
+        transform: translateY(0);
     }
 }
 
