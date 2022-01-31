@@ -220,6 +220,7 @@ nav {
     border-radius: 30px;
     font-size: 19px;
     border: 2px solid #ff4301;
+    transition: .5s;
 }
 
 .join:hover {
@@ -237,6 +238,7 @@ nav {
     border-radius: 30px;
     font-size: 19px;
     border: 2px solid #ff4301;
+    transition: .5s;
 }
 
 .get:hover {
