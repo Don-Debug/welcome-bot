@@ -60,21 +60,12 @@ window.addEventListener("load", () => {
     }
 });
 window.addEventListener("load", () => {
-    let content = document.querySelector(".join");
+    let content = document.querySelector(".butons");
     let contentPosition = content.getBoundingClientRect().top;
     let screenPosition = window.innerHeight;
 
     if (contentPosition < screenPosition) {
         content.classList.add("bed");
-    }
-});
-window.addEventListener("load", () => {
-    let content = document.querySelector(".get");
-    let contentPosition = content.getBoundingClientRect().top;
-    let screenPosition = window.innerHeight;
-
-    if (contentPosition < screenPosition) {
-        content.classList.add("bad");
     }
 });
 window.addEventListener("scroll", () => {
