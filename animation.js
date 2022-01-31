@@ -1,7 +1,7 @@
 //nav scroll
 window.addEventListener("scroll", function() {
     var navbar = document.querySelector("nav");
-    navbar.classList.toggle("crush", window.scrollY > 50);
+    navbar.classList.toggle("crush", window.scrollY > 40);
 })
 
 //back to top button

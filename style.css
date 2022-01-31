@@ -395,7 +395,8 @@ samp ul {
     width: 100px;
     height: 100px;
     margin-left: 45.8%;
-    padding: 10px;
+    border-radius: 50%;
+    padding: 0px;
     opacity: 0;
     transform: scale(2);
     transition: all .7s ease-in;
@@ -407,7 +408,7 @@ samp ul {
 }
 
 .founder-name {
-    color: #002fac;
+    color: #0072ff;
     padding: 15px;
     opacity: 0;
     transform: translateX(-100px);
@@ -420,10 +421,11 @@ samp ul {
 }
 
 .founder-info {
-    width: 500px;
+    width: 600px;
     margin-left: 30%;
     padding: 10px;
-    color: #002fac;
+    color: #0072ff;
+    font-size: 15px;
     opacity: 0;
     transform: translateX(150px);
     transition: all 1s ease-in;
