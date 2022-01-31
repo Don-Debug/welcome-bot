@@ -158,12 +158,20 @@ nav {
 }
 
 .home-par .fas {
-    color: #000;
-    background-color: #fff;
-    border-radius: 50%;
+    color: rgb(255, 255, 255);
     padding: 3.5px 4px;
     font-size: 14px;
     align-items: center;
+    animation: updown 1s alternate-reverse infinite;
+}
+
+@keyframes updown {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(5px);
+    }
 }
 
 .col1 {
