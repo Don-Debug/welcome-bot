@@ -81,7 +81,7 @@ window.addEventListener("scroll", () => {
 window.addEventListener("scroll", () => {
     let content = document.querySelector(".about-features");
     let contentPosition = content.getBoundingClientRect().top;
-    let screenPosition = window.innerHeight / 0.5;
+    let screenPosition = window.innerHeight / 0.6;
 
     if (contentPosition < screenPosition) {
         content.classList.add("burger");
