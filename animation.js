@@ -51,7 +51,7 @@ window.addEventListener("load", () => {
     }
 });
 window.addEventListener("load", () => {
-    let content = document.querySelector(".home-icon");
+    let content = document.querySelector(".col1");
     let contentPosition = content.getBoundingClientRect().top;
     let screenPosition = window.innerHeight;
 
