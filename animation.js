@@ -30,6 +30,17 @@ window.addEventListener("load", smash);
 function smash() {
     preload.classList.add("hide");
 }
+//click menu 
+const menu = document.getElementById("mobile-menu")
+const close = document.getElementById("close")
+const nav = document.querySelector(".list")
+
+menu.addEventListener("click", () => {
+    nav.classList.add("bosi")
+})
+close.addEventListener("click", () => {
+    nav.classList.remove("bosi")
+})
 
 //try scroll animation
 window.addEventListener("load", () => {

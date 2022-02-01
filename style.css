@@ -86,8 +86,12 @@ nav {
     transition: .5s;
 }
 
-.logo {
+#close {
     color: #fff;
+    display: none;
+}
+
+.logo {
     width: 220px;
 }
 
@@ -119,6 +123,12 @@ nav {
 
 .list-items:hover ::after {
     width: 75%;
+}
+
+#mobile-menu {
+    font-size: 30px;
+    color: #fff;
+    display: none;
 }
 
 .empty {
@@ -687,4 +697,178 @@ textarea:focus {
     border: none;
     cursor: pointer;
     z-index: 999;
+}
+
+@media screen and (max-width: 1050px) {
+    #mobile-menu {
+        display: block;
+        cursor: pointer;
+    }
+    #close {
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 20%;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .logo {
+        width: 150px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0%;
+        z-index: 2;
+        background-color: #000;
+        width: 100%;
+        padding: 25px;
+    }
+    .list {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 20px 30px;
+        background-color: black;
+        width: 50%;
+        height: 100%;
+        z-index: 10000;
+        transform: translateX(100%);
+        transition: transform .5s ease-in-out;
+    }
+    .bosi {
+        transform: translateX(0);
+    }
+    .list-items {
+        padding: 20px;
+        margin-top: 30px;
+    }
+    .navlinks {
+        color: #fff;
+    }
+    .empty {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px 40px;
+        text-align: center;
+    }
+    .big-text {
+        font-size: 30px;
+        color: #fff;
+        margin-top: 80px;
+        margin-left: 15px;
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: all 1s ease-in;
+    }
+    .tiny {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .home-par {
+        color: #fff;
+        font-size: 19px;
+        margin-top: 60px;
+        margin-left: 15px;
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: all 1.1s ease-in;
+    }
+    .call {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .home-par .fas {
+        color: rgb(255, 255, 255);
+        padding: 3.5px 4px;
+        font-size: 14px;
+        align-items: center;
+        animation: updown 1s alternate-reverse infinite;
+    }
+    @keyframes updown {
+        from {
+            transform: translateY(-10px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    .col1 {
+        margin: 10px;
+        opacity: 0;
+        transform: scale(0.3);
+        transition: all .8s ease-in;
+    }
+    .col2 {
+        margin: 10px;
+        grid-area: bottom;
+    }
+    .home-icon {
+        width: 200px;
+        height: 250px;
+        margin-right: 200px;
+        border-radius: 50%;
+        animation: avion 1.7s alternate-reverse infinite;
+    }
+    @keyframes avion {
+        from {
+            transform: translateY(-30px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    .qese {
+        opacity: 1;
+        transform: scale(1);
+    }
+    .butons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 100px;
+        opacity: 0;
+        transform: scale(0.1);
+        transition: all .8s ease-in-out;
+    }
+    .bed {
+        opacity: 1;
+        transform: scale(1);
+    }
+    .join {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px 30px;
+        background-color: #ff4301;
+        border-radius: 30px;
+        font-size: 19px;
+        border: 2px solid #ff4301;
+        transition: .5s;
+        margin-bottom: 2rem;
+    }
+    .join:hover {
+        color: #ff4301;
+        background-color: #fff;
+        border: 2px solid #ff4301;
+        box-shadow: 4px 4px 10px 2px #000;
+    }
+    .get {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px 30px;
+        background-color: #ff4301;
+        border-radius: 30px;
+        font-size: 19px;
+        border: 2px solid #ff4301;
+        transition: .5s;
+    }
+    .get:hover {
+        color: #ff4301;
+        background-color: #fff;
+        border: 2px solid #ff4301;
+        box-shadow: 4px 4px 10px 2px #000;
+    }
 }
