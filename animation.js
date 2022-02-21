@@ -162,7 +162,7 @@ window.addEventListener("scroll", () => {
     }
 });
 window.addEventListener("scroll", () => {
-    let content = document.querySelector(".pica");
+    let content = document.querySelector(".butoni");
     let contentPosition = content.getBoundingClientRect().top;
     let screenPosition = window.innerHeight / 1;
 

@@ -582,6 +582,12 @@ textarea:focus {
     resize: none;
 }
 
+.butoni {
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all .7s ease-in-out;
+}
+
 .pica {
     padding: 10px 20px;
     background-color: #fff;
@@ -593,9 +599,6 @@ textarea:focus {
     margin-bottom: 10px;
     margin-left: 230px;
     cursor: pointer;
-    opacity: 0;
-    transform: scale(0.1);
-    transition: all .7s ease-in-out;
 }
 
 .pica:hover {
@@ -760,27 +763,20 @@ textarea:focus {
         color: #fff;
         margin-top: 10px;
         margin-left: 15px;
+        transition: none;
     }
     .home-par {
         color: #fff;
         font-size: 19px;
         margin-top: 30px;
         margin-left: 15px;
+        transition: none;
     }
     .home-par .fas {
         color: rgb(255, 255, 255);
         padding: 3.5px 4px;
         font-size: 14px;
         align-items: center;
-        animation: updown 1s alternate-reverse infinite;
-    }
-    @keyframes updown {
-        from {
-            transform: translateY(-10px);
-        }
-        to {
-            transform: translateY(0);
-        }
     }
     .col1 {
         margin: 10px;
@@ -794,15 +790,6 @@ textarea:focus {
         margin-top: 100px;
         margin-right: 70px;
         border-radius: 50%;
-        animation: avion 1.7s alternate-reverse infinite;
-    }
-    @keyframes avion {
-        from {
-            transform: translateY(-30px);
-        }
-        to {
-            transform: translateY(0);
-        }
     }
     .butons {
         display: flex;
@@ -810,6 +797,7 @@ textarea:focus {
         justify-content: space-around;
         align-items: center;
         margin-top: 50px;
+        transition: none;
     }
     .join {
         color: #fff;
@@ -867,6 +855,7 @@ textarea:focus {
         margin-top: 55px;
         margin-left: 0px;
         align-items: center;
+        transition: none;
     }
     .block {
         margin: 10px;
@@ -875,6 +864,7 @@ textarea:focus {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        transition: none;
     }
     .about-features {
         display: flex;
@@ -885,6 +875,7 @@ textarea:focus {
         padding: 0px 60px;
         margin-top: 40px;
         z-index: 999;
+        transition: none;
     }
     .box {
         width: 350px;
@@ -934,6 +925,7 @@ textarea:focus {
         margin-bottom: 30px;
         display: flex;
         justify-content: space-evenly;
+        transition: none;
     }
     .first-block {
         background-color: #fff;
@@ -976,10 +968,12 @@ textarea:focus {
         height: 100px;
         border-radius: 50%;
         margin-left: 0;
+        transition: none;
     }
     .founder-name {
         color: #0072ff;
         padding: 5px;
+        transition: none;
     }
     .founder-info {
         width: 400px;
@@ -987,6 +981,7 @@ textarea:focus {
         padding: 30px;
         color: #0072ff;
         font-size: 15px;
+        transition: none;
     }
     .contact-style {
         background-image: linear-gradient(to right, #00c6ff, #0072ff);
@@ -1165,5 +1160,20 @@ textarea:focus {
         border: none;
         cursor: pointer;
         z-index: 11999;
+    }
+    .leter {
+        transition: none;
+    }
+    .col1 {
+        transition: none;
+    }
+    .leter-dy {
+        transition: none;
+    }
+    .leter-tre {
+        transition: none;
+    }
+    .butoni {
+        transition: none;
     }
 }
