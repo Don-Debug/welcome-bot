@@ -506,6 +506,7 @@ samp ul {
     margin-top: 10px;
     width: 14rem;
     height: 3rem;
+    background-color: transparent;
 }
 
 input:focus {
@@ -524,6 +525,7 @@ textarea:focus {
     opacity: 0;
     transform: translateX(100px);
     transition: all .8s ease-in;
+    background-color: transparent;
 }
 
 .leter-pice {
@@ -535,7 +537,7 @@ textarea:focus {
     opacity: 0;
     transform: translateX(100px);
     transition: all .8s ease-in;
-    background: transparent;
+    background-color: transparent;
 }
 
 .leter-pice {
@@ -702,7 +704,7 @@ textarea:focus {
     z-index: 11999;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
     #mobile-menu {
         display: block;
         cursor: pointer;
@@ -736,7 +738,7 @@ textarea:focus {
         right: 0;
         padding: 20px 30px;
         background-color: black;
-        width: 50%;
+        width: 70%;
         height: 100%;
         z-index: 10000;
         transform: translateX(100%);
@@ -753,427 +755,206 @@ textarea:focus {
         color: #fff;
     }
     .empty {
-        display: flex;
+        margin-top: 8rem;
         flex-direction: column-reverse;
-        margin: 0px 40px;
-        text-align: center;
-    }
-    .big-text {
-        font-size: 30px;
-        color: #fff;
-        margin-top: 10px;
-        margin-left: 15px;
-        transition: none;
-    }
-    .home-par {
-        color: #fff;
-        font-size: 19px;
-        margin-top: 30px;
-        margin-left: 15px;
-        transition: none;
-    }
-    .home-par .fas {
-        color: rgb(255, 255, 255);
-        padding: 3.5px 4px;
-        font-size: 14px;
+        justify-content: center;
         align-items: center;
-    }
-    .col1 {
-        margin: 10px;
-    }
-    .col2 {
-        margin: 10px;
     }
     .home-icon {
-        width: 220px;
-        height: 250px;
-        margin-top: 100px;
-        margin-right: 70px;
-        border-radius: 50%;
+        width: 200px;
+        height: 230px;
+        margin-right: auto;
+        border-radius: 0;
+        animation: avion 1.7s alternate-reverse infinite;
     }
     .butons {
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
         align-items: center;
-        margin-top: 50px;
+        justify-content: center;
+        opacity: 1;
+        transform: translateX(0px);
         transition: none;
     }
-    .join {
-        color: #fff;
-        text-decoration: none;
-        width: 15rem;
-        padding: 15px 30px;
-        background-color: #ff4301;
-        border-radius: 30px;
-        font-size: 19px;
-        border: 2px solid #ff4301;
-        transition: .5s;
-        margin-bottom: 2rem;
-    }
-    .join:hover {
-        color: #ff4301;
-        background-color: #fff;
-        border: 2px solid #ff4301;
-        box-shadow: 4px 4px 10px 2px #000;
+    .bed {
+        opacity: 1;
+        transform: none;
     }
     .get {
-        color: #fff;
-        text-decoration: none;
-        width: 15rem;
-        padding: 15px 30px;
-        background-color: #ff4301;
-        border-radius: 30px;
-        font-size: 19px;
-        border: 2px solid #ff4301;
-        transition: .5s;
+        margin-top: 20px;
     }
-    .get:hover {
-        color: #ff4301;
-        background-color: #fff;
-        border: 2px solid #ff4301;
-        box-shadow: 4px 4px 10px 2px #000;
+    .big-text {
+        font-size: 20px;
     }
-    .bang {
-        background-color: #fff;
-        padding: 50px 10px;
-        box-shadow: inset 0px 5px 10px 0px #000000;
+    .home-par {
+        font-size: 15px;
+        margin-top: 20px;
     }
     .title-class {
-        color: #000;
-        text-align: center;
-        text-shadow: 3px 3px 4px #00c6ff;
-    }
-    .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        font-size: 20px;
     }
     .img-bot {
-        width: 400px;
-        height: 280px;
-        margin-top: 55px;
-        margin-left: 0px;
-        align-items: center;
+        width: 300px;
+        height: 200px;
+        opacity: 1;
+        transform: translateX(0px);
         transition: none;
     }
-    .block {
-        margin: 10px;
-        margin-left: 0;
-        display: flex;
+    .boti {
+        opacity: 1;
+        transform: none;
+    }
+    .about {
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        transition: none;
+        justify-content: center;
     }
     .about-features {
+        margin: 0;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
-        margin: 10px;
-        padding: 0px 60px;
-        margin-top: 40px;
-        z-index: 999;
-        transition: none;
     }
     .box {
-        width: 350px;
-        background-color: #fff;
-        color: #000;
-        padding: 0px 10px;
+        width: 250px;
         margin-top: 30px;
-        margin-right: 40px;
-        padding: 30px 20px;
-        border-radius: 10px;
-        box-shadow: 2.5px 2.5px 3.5px 3.5px #000;
-        text-transform: uppercase;
-    }
-    summary {
-        list-style: none;
-        letter-spacing: 1px;
-        font-family: sans-serif;
-        padding: 5px 7px;
-    }
-    summary .fas {
-        font-size: 20px;
-        color: #000;
-    }
-    samp ul {
-        padding: 15px 15px;
+        margin-right: 0;
+        padding: 20px 10px;
     }
     .text {
-        cursor: pointer;
-    }
-    .success {
-        background-image: linear-gradient(to right, #00c6ff, #0072ff);
-        padding: 60px 0px;
-        box-shadow: 0px 0px 10px 3.5px #000;
+        font-size: 13px;
     }
     .succes-title {
-        display: inline-block;
-        align-items: center;
-        text-shadow: 3px 3px 4px #fff;
-        width: 480px;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
     }
     .info-blocks {
-        display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
-        margin-top: 60px;
-        margin-bottom: 30px;
-        display: flex;
-        justify-content: space-evenly;
-        transition: none;
     }
     .first-block {
-        background-color: #fff;
-        padding: 20px 0px;
-        width: 300px;
-        border-radius: 15px;
-        margin-bottom: 30px;
-    }
-    .visit-number {
-        font-size: 25px;
-        text-align: center;
-        padding: 25px 0px;
-        color: #fa0000;
-    }
-    .title {
-        font-size: 17px;
-        text-align: center;
-        padding: 10px 0px;
-        color: #04a534;
+        margin-top: 30px;
     }
     .founder-profile {
-        padding: 85px 30px;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.274), rgba(255, 255, 255, 0.274)), url(./images/discordtry.png);
-        background-size: cover;
-        background-attachment: fixed;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        box-shadow: inset 0px 5px 10px 0px #000000;
-    }
-    .sistem {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .founder-image {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-left: 0;
-        transition: none;
-    }
-    .founder-name {
-        color: #0072ff;
-        padding: 5px;
-        transition: none;
+        text-align: center;
     }
     .founder-info {
-        width: 400px;
-        margin-left: 8%;
-        padding: 30px;
-        color: #0072ff;
-        font-size: 15px;
+        width: 40vh;
+        margin: auto;
+        padding: auto;
+        opacity: 1;
+        transform: translateX(0px);
         transition: none;
     }
-    .contact-style {
-        background-image: linear-gradient(to right, #00c6ff, #0072ff);
-        padding: 60px;
-        box-shadow: 0px 0px 10px 3.5px #000;
+    .info {
+        opacity: 1;
+        transform: none;
     }
     .contact-title {
-        text-align: center;
-        padding-bottom: 30px;
-        text-shadow: 3px 3px 4px #fff;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
     }
     .form {
-        background-color: #fff;
-        padding: 30px 70px;
+        padding: 30px 30px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+        align-items: flex-start;
+        justify-content: flex-start;
         border-radius: 20px;
-        box-shadow: inset .5px .5px 15px 4px #000;
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-    .name-title {
-        color: #0072ff;
-        font-size: 14px;
-        padding: 10px 5px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    .far {
-        border-bottom: 2px solid #0072ff;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        padding: 3px 0px;
-        margin-top: 10px;
-        width: 8rem;
-        height: 2rem;
-    }
-    input:focus {
-        outline: none;
-    }
-    textarea:focus {
-        outline: none;
+        margin-left: 0;
+        margin-top: 40px;
     }
     .bosh {
-        height: 20px;
+        height: 30px;
+    }
+    .leter {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: none;
+    }
+    .leter-pice {
+        opacity: 1;
+        transform: none;
+    }
+    .name-title {
+        font-size: 13px;
+        padding: 20px 5px;
+    }
+    .far {
+        padding: 2px 0px;
+        margin-top: 5px;
+        width: 9rem;
+        height: 3rem;
+    }
+    .leter-dy {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: none;
+    }
+    .leter-pice {
+        opacity: 1;
+        transform: none;
+    }
+    .leter-tre {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: none;
+    }
+    .leter-pice {
+        opacity: 1;
+        transform: none;
     }
     .la-nam {
-        color: #0072ff;
-        font-size: 14px;
-        padding: 10px 5px;
-        margin-top: 10px;
-        margin-bottom: 20px;
+        font-size: 13px;
+        padding: 20px 5px;
     }
     #lname {
-        border-bottom: 2px solid #0072ff;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        padding: 3px 0px;
-        margin-top: 10px;
-        width: 8rem;
-        height: 2rem;
+        padding: 2px 0px;
+        margin-top: 5px;
+        width: 9rem;
+        height: 3rem;
     }
     .comment-name {
-        color: #0072ff;
-        font-size: 14px;
-        padding: 10px 5px;
-        margin-top: 10px;
-        margin-bottom: 20px;
+        font-size: 13px;
+        padding: 20px 5px;
     }
     #subject {
-        border-bottom: 2px solid #0072ff;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        padding: 3px 0px;
-        margin-top: 10px;
-        width: 13rem;
-        height: 2rem;
+        padding: 2px 0px;
+        margin-top: 20px;
+        width: 14rem;
+        height: 3rem;
+        resize: none;
     }
     .pica {
-        padding: 10px 20px;
-        background-color: #fff;
-        color: #000;
-        border: 1px solid #000;
-        border-radius: 20px;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 100px;
-        cursor: pointer;
-        transition: all .7s ease-in-out;
+        display: flex;
+        margin-left: auto;
     }
-    .pica:hover {
-        background-color: #000;
-        color: #fff;
-        transition: .5s;
+    .butoni {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: none;
     }
-    .footer {
-        background-color: #e7e7e7;
-        width: 100%;
-        height: 15rem;
-        box-shadow: inset .5px .5px 15px 4px #000;
+    .marga {
+        opacity: 1;
+        transform: none;
     }
     .contact-logos {
         display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        flex-wrap: wrap;
         justify-content: center;
-        padding: 20px 0px;
-        font-size: 25px;
-    }
-    .contact-link {
-        border-radius: 50%;
-        padding: 16px 20px;
-        margin-right: 30px;
-    }
-    #discord {
-        color: #7289da;
-        background-color: #fff;
-        transition: .5s;
-    }
-    #discord:hover {
-        background-color: #7289da;
-        color: #fff;
-        transition: .5s;
-    }
-    #github {
-        color: #666666;
-        background-color: #fff;
-        transition: .5s;
-    }
-    #github:hover {
-        color: #fff;
-        background-color: #666666;
-        transition: .5s;
-    }
-    #reddit {
-        color: #ff4301;
-        background-color: #fff;
-        transition: .5s;
-    }
-    #reddit:hover {
-        color: #fff;
-        background-color: #ff4301;
-        transition: .5s;
-    }
-    #twitter {
-        color: #1DA1F2;
-        background-color: #fff;
-        transition: .5s;
-    }
-    #twitter:hover {
-        color: #fff;
-        background-color: #1DA1F2;
-        transition: .5s;
+        padding: 25px 30px;
     }
     .copyright {
-        font-size: 15px;
-        margin-top: 50px;
-        text-align: center;
-        color: rgb(116, 116, 116);
-    }
-    #back-to-top {
-        position: fixed;
-        bottom: 6%;
-        right: 4%;
-        color: rgb(255, 255, 255);
-        font-size: 20px;
-        background-color: rgb(14, 76, 247);
-        border-radius: 50%;
-        display: none;
-        width: 60px;
-        height: 60px;
-        border: none;
-        cursor: pointer;
-        z-index: 11999;
-    }
-    .leter {
-        transition: none;
-    }
-    .col1 {
-        transition: none;
-    }
-    .leter-dy {
-        transition: none;
-    }
-    .leter-tre {
-        transition: none;
-    }
-    .butoni {
-        transition: none;
+        font-size: 13px;
+        margin: auto;
     }
 }
