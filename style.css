@@ -704,6 +704,58 @@ textarea:focus {
     z-index: 11999;
 }
 
+@media screen and (max-width: 1050px) {
+    #mobile-menu {
+        display: block;
+        cursor: pointer;
+    }
+    #close {
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 20%;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .logo {
+        width: 150px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0%;
+        z-index: 1000000;
+        background-color: #000;
+        width: 100%;
+        padding: 25px;
+    }
+    .list {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 20px 30px;
+        background-color: black;
+        width: 70%;
+        height: 100%;
+        z-index: 10000;
+        transform: translateX(100%);
+        transition: transform .5s ease-in-out;
+    }
+    .bosi {
+        transform: translateX(0);
+    }
+    .list-items {
+        padding: 20px;
+        margin-top: 30px;
+    }
+    .navlinks {
+        color: #fff;
+    }
+}
+
 @media screen and (max-width: 700px) {
     #mobile-menu {
         display: block;
